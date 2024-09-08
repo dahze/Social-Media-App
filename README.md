@@ -1,19 +1,20 @@
 # Social Media App
 
-The Social Media App is a Flutter application with Firebase integration that allows users to manage profiles, create posts, send friend requests, and more. The app features a retro-inspired UI with a focus on user-friendly interactions and real-time updates through Firestore.
+**'2001'** is a Flutter application integrated with Firebase, designed to deliver a comprehensive social networking experience with a retro-inspired UI. It enables users to manage their profiles, create and edit posts, and handle friend requests. Users can securely sign in, sign up, reset passwords, and delete accounts using Firebase Authentication. The app features customizable profiles, a dynamic feed for posts, and tools for efficient friend management. Real-time updates and data management are handled through Firestore, ensuring a smooth and engaging user experience.
 
 ## User Authentication
-- **Sign In / Sign Up**: Using **Firebase Authentication**, users can create a new account or sign in to an existing one with their email and password.
+- **Sign In/Sign Up**: Using **Firebase Authentication**, users can create a new account or sign in to an existing one with their email and password.
 
 <p align="center">
 <img src="https://github.com/user-attachments/assets/839458b4-9d96-4a49-ac45-10541a1d128a" width="250">
-<img src="https://github.com/user-attachments/assets/88750879-1f5f-43a7-9e98-4c2fccedd13f" width="250">
 <img src="https://github.com/user-attachments/assets/fff6357b-b635-40c2-ba60-e3d75005c11a" width="250">
 </p>
 
 - **Password Reset**: Users can reset their password through a dedicated option in the profile section, handled by **Firebase Authentication**.
 
-<p align="center"> <img src="https://github.com/user-attachments/assets/a76b36a2-004f-4032-9fde-cbdd38b76a98" width="250"> </p>
+<p align="center">
+<img src="https://github.com/user-attachments/assets/a76b36a2-004f-4032-9fde-cbdd38b76a98" width="250">
+</p>
 
 - **Sign Out**: Users can securely log out of their account.
 
