@@ -2,9 +2,11 @@
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import '../models/user_profile.dart';
+import '../services/friend_service.dart';
 
 class ProfileService {
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
+  final FriendService _friendService = FriendService();
 
   Future<UserProfile?> getUserProfile(String userId) async {
     try {
@@ -50,6 +52,8 @@ class ProfileService {
 
   Future<void> deleteUserProfile(String userId) async {
     try {
+      await _friendService.cleanupUserRequests(userId);
+
       QuerySnapshot postsSnapshot = await _firestore
           .collection('users')
           .doc(userId)

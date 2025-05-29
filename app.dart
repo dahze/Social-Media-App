@@ -1,6 +1,7 @@
 // ignore_for_file: deprecated_member_use
 
 import 'package:flutter/material.dart';
+import 'package:mad/providers/message_provider.dart';
 import 'package:provider/provider.dart';
 import 'providers/auth_provider.dart';
 import 'providers/profile_provider.dart';
@@ -21,9 +22,11 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider(create: (_) => ProfileProvider()),
         ChangeNotifierProvider(create: (_) => PostProvider()),
         ChangeNotifierProvider(create: (_) => FriendRequestProvider()),
+        ChangeNotifierProvider(create: (_) => MessageProvider()),
       ],
       child: MaterialApp(
         title: 'Social Media App',
+        debugShowCheckedModeBanner: false,
         theme: ThemeData(
           colorScheme: const ColorScheme(
             primary: Color(0xFFB8E986),
@@ -39,22 +42,22 @@ class MyApp extends StatelessWidget {
             brightness: Brightness.dark,
           ),
           textTheme: const TextTheme(
-            headline1: TextStyle(
+            displayLarge: TextStyle(
               fontFamily: 'PressStart2P',
               fontSize: 24,
               color: Colors.white,
             ),
-            headline2: TextStyle(
+            displayMedium: TextStyle(
               fontFamily: 'PressStart2P',
               fontSize: 22,
               color: Colors.white,
             ),
-            bodyText1: TextStyle(
+            bodyLarge: TextStyle(
               fontFamily: 'PressStart2P',
               fontSize: 16,
               color: Colors.white,
             ),
-            bodyText2: TextStyle(
+            bodyMedium: TextStyle(
               fontFamily: 'PressStart2P',
               fontSize: 14,
               color: Colors.white70,

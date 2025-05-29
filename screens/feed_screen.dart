@@ -8,6 +8,7 @@ import '../widgets/post_card.dart';
 import '../screens/profile_screen.dart';
 import '../screens/friends_screen.dart';
 import '../screens/search_screen.dart';
+import '../screens/message_screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import '../models/post.dart';
 import '../widgets/retro_button.dart';
@@ -185,7 +186,7 @@ class _FeedScreenState extends State<FeedScreen> {
                     ),
                   ),
                 ),
-                style: const TextStyle(color: Colors.black),
+                style: const TextStyle(color: Colors.black, fontSize: 13.0),
                 maxLines: 3,
               ),
             ],
@@ -345,6 +346,19 @@ class _FeedScreenState extends State<FeedScreen> {
             elevation: 0,
             titleSpacing: -28,
             leading: const SizedBox(width: 0),
+            actions: [
+              IconButton(
+                icon: const Icon(Icons.message, color: Colors.black),
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const MessageScreen(),
+                    ),
+                  );
+                },
+              ),
+            ],
           ),
           body: Column(
             children: [
