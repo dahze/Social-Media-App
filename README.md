@@ -85,7 +85,7 @@
 <img src="https://github.com/user-attachments/assets/bc9eae9d-e43c-4eb4-933d-401c3b26d471" width="250">
 </p>
   
-- **Message Input**: Users can type and send messages instantly through a bottom input bar. Space is reserved for future image messaging support.
+- **Message Input**: Users can type and send messages instantly through a bottom input bar.
 
 <p align="center">
 <img src="https://github.com/user-attachments/assets/53b01b07-3985-4bae-a232-5b770870b9ed" width="250">
