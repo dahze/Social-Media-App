@@ -1,6 +1,6 @@
 # Social Media App
 
-**'2001'** is a Flutter application integrated with Firebase, designed to deliver a comprehensive social networking experience with a retro-inspired UI. It enables users to manage their profiles, create and edit posts, and handle friend requests. Users can securely sign in, sign up, reset passwords, and delete accounts using Firebase Authentication. The app features customizable profiles, a dynamic feed for posts, and tools for efficient friend management. Real-time updates and data management are handled through Firestore, ensuring a smooth and engaging user experience.
+**'2001'** is a Flutter application integrated with Firebase, designed to deliver a comprehensive social networking experience with a retro-inspired UI. It enables users to manage their profiles, create and edit posts, chat with friends, and handle friend requests. Users can securely sign in, sign up, reset passwords, and delete accounts using Firebase Authentication. The app features customizable profiles, a dynamic feed for posts, real-time chat, and tools for efficient friend management. Real-time updates and data management are handled through Firestore, ensuring a smooth and engaging user experience.
 
 ## User Authentication
 - **Sign In/Sign Up**: Using **Firebase Authentication**, users can create a new account or sign in to an existing one with their email and password.
@@ -65,11 +65,39 @@
 - **Edit/Delete Functionality**: Users can edit or delete their posts directly from both the "All Posts" and "My Posts" sections, providing convenient post management, with all actions synced in real-time via **Firestore**.
 
 <p align="center">
-<img src="https://github.com/user-attachments/assets/5322a369-4ed6-4c45-b79e-cfe1ae83b42a" width="250">
+<img src="https://github.com/user-attachments/assets/71df82a7-0d77-4a70-a722-0a13752757a3" width="250">
 <img src="https://github.com/user-attachments/assets/4dddee02-232e-4695-93b3-3f687760bf04" width="250">
 </p>
 
 - **Firestore Integration**: All posts are stored under the user’s **Firestore** document for personalized data retrieval and real-time updates.
+
+## Messaging
+
+- **Real-Time Messaging**: Users can initiate private 1-on-1 chats with their friends. Messages are sent and received in real-time using **Cloud Firestore**.
+
+<p align="center">
+<img src="https://github.com/user-attachments/assets/b3bb968b-e32d-462e-b1e2-e0ce7d0c5711" width="250">
+</p>
+
+- **Chat Interface**: Displays messages chronologically, with text alignment based on sender (user vs. friend).
+
+<p align="center">
+<img src="https://github.com/user-attachments/assets/bc9eae9d-e43c-4eb4-933d-401c3b26d471" width="250">
+</p>
+  
+- **Message Input**: Users can type and send messages instantly through a bottom input bar. Space is reserved for future image messaging support.
+
+<p align="center">
+<img src="https://github.com/user-attachments/assets/53b01b07-3985-4bae-a232-5b770870b9ed" width="250">
+</p>
+
+- **Chat Navigation**: A messaging icon is available in the top right corner of the feed screen. Tapping it takes the user to a chat overview page showing recent conversations.
+
+<p align="center">
+<img src="https://github.com/user-attachments/assets/15ca31c8-c65c-4fc1-a3e1-98e5555904c6" width="250">
+</p>
+  
+- **Firestore Integration**: Each conversation is stored in a `messages` subcollection under a uniquely generated document based on both users’ IDs.
 
 ## Friend Management
 - **Send/Cancel Friend Requests**: Users can search for other users and send or cancel friend requests from the search screen, with data managed through **Firestore**.
