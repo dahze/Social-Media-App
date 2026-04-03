@@ -1,4 +1,4 @@
-# Social Media App
+# 2001
 
 **'2001'** is a Flutter application integrated with Firebase, designed to deliver a comprehensive social networking experience with a retro-inspired UI. It enables users to manage their profiles, create and edit posts, chat with friends, and handle friend requests. Users can securely sign in, sign up, reset passwords, and delete accounts using Firebase Authentication. The app features customizable profiles, a dynamic feed for posts, real-time chat, and tools for efficient friend management. Real-time updates and data management are handled through Firestore, ensuring a smooth and engaging user experience.
 
